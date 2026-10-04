@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>show-products</title>
+  </head>
+  <body>
+    <section class="min-vh-100 d-flex flex-column align-items-center p-4">
+      <button id="showProductsBtn" class="btn btn-primary px-4 py-2 mt-4">
+        Click to Show Products
+      </button>
+
+      <div id="loading" class="loading-box d-none mt-3">
+        <span>Loading</span>
+
+        <div class="dots">
+          <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div id="productsContainer" class="row g-4"></div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
